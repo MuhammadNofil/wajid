@@ -1,0 +1,298 @@
+/* FONTS */
+@font-face{
+    src: url('../fonts/Monopoly\ Inline\ 700.ttf');
+    font-family: monopoly;
+}
+/* END FONTS */
+
+.logo{
+    height: 100px;
+}
+/* SECTION */
+
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-head{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: monopoly;
+    font-weight: bolder;
+    font-size: 45px;
+}
+.section-head::after{
+    background: #ffcc00;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+/* END SECTION */
+
+#header{
+    color: #ffffff;
+    background: #000;
+}
+#logo{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+#menu{
+    list-style: none;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    background:#000;
+    color: #ffffff;
+    padding: 15px 10px;
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: -15px;
+    margin-top: 0.5px;
+    transition: transform .3s ease-out;
+    
+}
+#menu li a:hover {
+    color: #fff;
+    border-bottom: 4px solid #ffcc00;
+    text-decoration: none;
+    transform: translate(0, -5px);
+}
+/* END MENU BAR */
+
+
+/* BANNER */
+#banner{
+    background: url('../images/cover.jpeg') no-repeat 0 0;
+    background-size: cover;
+    
+
+}
+.banner-title{
+    padding-top: 5rem;
+}
+.banner-title h1{
+     background: #000;
+     display: inline-block;
+     padding: 10px;
+     margin: 0;
+}
+.banner-title p.lead{
+    color: #ffffff;
+    background:#ffcc00;
+    padding: 10px;
+}
+ 
+/* END BANNER */
+
+
+
+
+#form{
+    width: 80%;
+    padding: 20px;
+}
+.container h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 20px;
+    color: #000;
+}
+.container .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.container .row100 .inputbox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #000;    
+}
+.container .row100 .inputbox input,textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+.container .row100 .inputbox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .row100 .inputbox input:focus + .text,.container .row100 .inputbox input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .inputbox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffcc00;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.container .row100 .inputbox input:focus ~ .line,.container .row100 .inputbox input:valid ~ .line{
+    height: 100%;
+}
+.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+textarea{
+    height: 100%;
+    resize: none;   
+}
+.container .row100 .inputbox textarea:focus + .text,.container .row100 .inputbox textarea:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+.container .row100 .inputbox textarea:focus ~ .line,.container .row100 .inputbox textarea:valid ~ .line{
+    height: 100%;
+}
+.sub{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #000;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 2px;
+}
+.sub:hover{
+    color: #000;
+    background-color: #ffcc00;
+}
+
+
+/* FOOTER-SIDEBAR */
+#footer-sidebar{
+    color: #ffffff;
+    background: #000;
+    padding: 20px 0px;
+}
+.footer-widget h4::after{
+    content: "";
+    background: #ffcc00;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0px;
+}
+.footer-widget a{
+    color: #ffffff;
+}
+.footer-widget a:hover{
+    text-decoration: none;
+    color: #ffcc00;
+}
+.latest-news{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.latestnews li{
+    margin-bottom: 3px;
+       
+}
+.latest-news li::before{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+/* END FOOTER-SIDEBAR */
+
+
+/* FOOTER */
+#footer{
+    background: #ffcc00;
+    color: #000;
+    padding: 10px 0px;
+}
+#social-icons{
+    list-style: none;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+#social-icons li{
+    display: inline-block;
+    padding-left: 5px;   
+}
+#social-icons li a{
+    color: #000;
+    font-size: 23px;
+}
+
+/* MEDIA QUERY */
+@media (max-width:786px) {
+    #logo
+    {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    #menu
+    {
+        text-align: center;
+    }
+    .menu-1 img
+    {
+        height: 330px;
+    }
+    .banner-title
+    {
+        padding-top: 0rem;
+    }
+    
+    .footer-widget
+    {
+        margin-bottom: 20px;
+    }
+    #footer
+    {
+        text-align: center;
+    }
+    #social-icons
+    {
+        margin-top: 10px;
+    }
+
+}
+
+/* END MEDIA QUERY */
